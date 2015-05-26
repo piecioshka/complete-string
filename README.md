@@ -7,17 +7,17 @@ Complete string by passed chars to passes size.
 - `withChar` - complete with any char:
 
 ```javascript
-Complete.withChar('batman', 3, '!') // 'batman!!!'
+Complete.withChar(' batman', 10, 'a') // => 'aaa batman'
 ```
 
 - `withZero` - complete with `0`:
 
 ```javascript
 var date = new Date();
-Complete.withZero(date.getMonth()) // '05'
+Complete.withZero(date.getMonth(), 2) // => '05'
 ```
 
-## Specs
+## Test
 
 As pre-installation you should have tool called `jest`:
 
@@ -39,4 +39,4 @@ in project directory, of course.
 
 ## License
 
-[The Mit License](http://piecioshka.mit-license.org) &right; 2015
+[The Mit License](http://piecioshka.mit-license.org)
