@@ -61,7 +61,7 @@
 
     // Exports.
 
-    if (module && module.exports) {
+    if (typeof module === 'object' && module.exports) {
         // Support CommonJS modules.
         module.exports = Complete;
 
