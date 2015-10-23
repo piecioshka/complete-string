@@ -21,7 +21,7 @@
      *
      * @type {{withChar: Function, withZero: Function}}
      */
-    var Complete = {
+    var CompleteString = {
 
         /**
          * Method which add `appender` sign to `chars` that, result length of returns string is length passed by `length`.
@@ -32,7 +32,6 @@
          * @returns {string}
          *
          * @throw When `appender` is not a single char.
-         * @throw When `chars` length is greater than limit length of results string.
          */
         withChar: function (string, length, char) {
             // Cast to strings.
@@ -40,11 +39,11 @@
             length = Number(length);
             char = String(char);
 
-            if (string.length <= length) {
+            if (string.length > length) {
                 return string;
             }
 
-            assert(char.length === 1, 'Complete: `char` is not a single char.');
+            assert(char.length === 1, 'CompleteString: `char` is not a single char.');
 
             var diff = (length - string.length);
             var complement = (new Array(diff + 1)).join(char);
@@ -69,15 +68,15 @@
 
     if (typeof module === 'object' && module.exports) {
         // Support CommonJS modules.
-        module.exports = Complete;
+        module.exports = CompleteString;
 
     } else if (typeof define === 'function' && define.amd) {
         // Support AMD
-        define(Complete)
+        define(CompleteString)
 
     } else {
-        // Put to global namespace `Complete`.
-        return (root.Complete = Complete);
+        // Put to global namespace `CompleteString`.
+        return (root.CompleteString = CompleteString);
     }
 
 }(this));
