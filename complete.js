@@ -1,3 +1,6 @@
+/**
+ * @author Piotr Kowalski <piecioshka@gmail.com>
+ */
 (function (root) {
     'use strict';
 
@@ -37,8 +40,11 @@
             length = Number(length);
             char = String(char);
 
+            if (string.length <= length) {
+                return string;
+            }
+
             assert(char.length === 1, 'Complete: `char` is not a single char.');
-            assert(string.length <= length, 'Complete: `string` length is not less than result limit.');
 
             var diff = (length - string.length);
             var complement = (new Array(diff + 1)).join(char);

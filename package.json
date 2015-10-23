@@ -1,11 +1,26 @@
 {
-  "name": "complete",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "test": "jest"
-  },
-  "jest": {
-    "testDirectoryName": "test"
-  }
+    "private": true,
+    "name": "complete-string",
+    "version": "1.1.0",
+    "description": "Complete string by any char. This repo is some kind of polyfill for ES7 padLeft.",
+    "license": "MIT",
+    "author": {
+        "name": "Piotr Kowalski",
+        "email": "piecioshka@gmail.com",
+        "url": "piecioshka.pl"
+    },
+    "keywords": [
+        "complete",
+        "string"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/piecioshka/complete-string.git"
+    },
+    "scripts": {
+        "test": "jest"
+    },
+    "jest": {
+        "testDirectoryName": "test"
+    }
 }
