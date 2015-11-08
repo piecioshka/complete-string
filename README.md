@@ -1,6 +1,24 @@
 # complete-string
 
-Complete string by any char. This repo is some kind of polyfill for ES7 padLeft.
+![](https://img.shields.io/npm/v/complete-string.svg)
+![](https://img.shields.io/npm/dt/complete-string.svg)
+![](https://img.shields.io/npm/l/complete-string.svg)
+![](https://img.shields.io/bower/v/complete-string.svg)
+![](https://img.shields.io/bower/l/complete-string.svg)
+
+> Complete string by any char. This repo is some kind of polyfill for ES7 padLeft.
+
+## Install
+
+```
+npm install complete-string
+```
+
+or
+
+```
+bower install complete-string
+```
 
 ## Usage
 
