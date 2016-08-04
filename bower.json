@@ -1,7 +1,7 @@
 {
     "name": "complete-string",
     "description": "CompleteString string by any char. This repo is some kind of polyfill for ES7 padLeft.",
-    "main": "complete-string.js",
+    "main": "./dist/complete-string.js",
     "license": "MIT",
     "authors": [
         {
@@ -10,15 +10,12 @@
             "homepage": "http://piecioshka.pl/"
         }
     ],
-    "keywords": [
-        "complete",
-        "string"
-    ],
     "repository": {
         "type": "git",
         "url": "http://github.com/piecioshka/complete-string.git"
     },
-    "devDependencies": {
-        "jest-cli": "^0.6.0"
-    }
+    "keywords": [
+        "complete",
+        "string"
+    ]
 }
