@@ -1,18 +1,16 @@
 'use strict';
 
-jest.dontMock('../complete-string');
-
-var CompleteString = require('../complete-string');
+var CompleteString = require('../../../lib/index');
 
 describe('CompleteString', function () {
     it('is ready', function () {
-        expect(CompleteString).toMatch(jasmine.any(Object));
+        expect(CompleteString).toEqual(jasmine.any(Object));
     });
 });
 
 describe('withChar', function () {
     it('should works', function () {
-        expect(CompleteString.withChar).toMatch(jasmine.any(Function));
+        expect(CompleteString.withChar).toEqual(jasmine.any(Function));
         expect(CompleteString.withChar('1', 2, 'x')).toEqual('x1');
         expect(CompleteString.withChar('11', 2, 'x')).toEqual('11');
     });
@@ -30,7 +28,7 @@ describe('withChar', function () {
 
 describe('withZero', function () {
     it('withZero', function () {
-        expect(CompleteString.withZero).toMatch(jasmine.any(Function));
+        expect(CompleteString.withZero).toEqual(jasmine.any(Function));
         expect(CompleteString.withZero('1', 2)).toEqual('01');
     });
 });
