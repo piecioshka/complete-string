@@ -13,15 +13,19 @@
 $ npm install complete-string
 ```
 
-## Usage
+## API
 
-- `withChar` - complete with any char:
+### `withChar(string: string, length: number, char: string)`
+
+Complete with any char:
 
 ```javascript
 CompleteString.withChar(' batman', 10, 'a') // => 'aaa batman'
 ```
 
-- `withZero` - complete with `0`:
+### `withZero(string: string, length: number)`
+
+Complete with `0`:
 
 ```javascript
 var date = new Date();
@@ -30,7 +34,7 @@ CompleteString.withZero(date.getMonth(), 2) // => '05'
 
 ## Unit tests
 
-How to run unit test (written in Jasmine):
+To run unit tests (written in Jasmine) execute:
 
 ```
 $ npm test
