@@ -1,6 +1,6 @@
 {
     "name": "complete-string",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "description": "CompleteString string by any char. This repo is some kind of polyfill for ES7 padLeft.",
     "license": "MIT",
     "author": {
@@ -29,7 +29,7 @@
     },
     "files": [
         "dist",
-        "lib",
+        "src",
         "index.js",
         "package.json",
         "README.md"

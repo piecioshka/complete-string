@@ -67,7 +67,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @author Piotr Kowalski <piecioshka@gmail.com> (piecioshka.pl)
 	 * @name complete-string
 	 * @description CompleteString string by any char. This repo is some kind of polyfill for ES7 padLeft.
-	 * @version 2.1.0
+	 * @version 2.1.1
 	 * @license MIT
 	 * @example
 	 * CompleteString.withChar(' batman', 10, 'a') // => 'aaa batman'

@@ -2,7 +2,6 @@
 
 [![npm version](https://badge.fury.io/js/complete-string.svg)](https://badge.fury.io/js/complete-string)
 ![](https://img.shields.io/npm/dt/complete-string.svg)
-![](https://img.shields.io/bower/v/complete-string.svg)
 [![Travis](https://img.shields.io/travis/piecioshka/complete-string.svg?maxAge=2592000)](https://travis-ci.org/piecioshka/complete-string)
 [![Coverage Status](https://coveralls.io/repos/github/piecioshka/complete-string/badge.svg?branch=master)](https://coveralls.io/github/piecioshka/complete-string?branch=master)
 
@@ -12,12 +11,6 @@
 
 ```
 $ npm install complete-string
-```
-
-or
-
-```
-$ bower install complete-string
 ```
 
 ## Usage
