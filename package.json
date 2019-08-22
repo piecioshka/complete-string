@@ -17,7 +17,9 @@
         "watch": "webpack -w",
         "test": "jasmine test/specs/**/**.js",
         "coverage": "nyc npm run test && nyc report --reporter=html",
-        "coveralls": "nyc npm run test && nyc report --reporter=text-lcov | coveralls -v"
+        "coveralls": "nyc npm run test && nyc report --reporter=text-lcov | coveralls -v",
+        "version": "npm run build && git add dist/",
+        "postversion": "git push --tags"
     },
     "devDependencies": {
         "coveralls": "^2.11.12",
