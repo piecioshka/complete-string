@@ -52,22 +52,22 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	module.exports = __webpack_require__(1);
 
 
-/***/ },
+/***/ }),
 /* 1 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	/**
-	 * @author Piotr Kowalski <piecioshka@gmail.com> (piecioshka.pl)
+	 * @author Piotr Kowalski <piecioshka@gmail.com> (https://piecioshka.pl)
 	 * @name complete-string
-	 * @description CompleteString string by any char. This repo is some kind of polyfill for ES7 padLeft.
-	 * @version 2.1.2
+	 * @description Complete string by any char. This repo is some kind of polyfill for ES2017 padStart.
+	 * @version 2.2.1
 	 * @license MIT
 	 * @example
 	 * CompleteString.withChar(' batman', 10, 'a') // => 'aaa batman'
@@ -141,7 +141,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = CompleteString;
 
 
-/***/ }
+/***/ })
 /******/ ])
 });
 ;
