@@ -3,7 +3,7 @@
  * @author Piotr Kowalski <piecioshka@gmail.com> (https://piecioshka.pl)
  * @name complete-string
  * @description Complete string by any char. This repo is some kind of polyfill for ES2017 padStart.
- * @version 2.2.2
+ * @version 2.2.3
  * @license MIT
  * @example
  * CompleteString.withChar(' batman', 10, 'a') // => 'aaa batman'
