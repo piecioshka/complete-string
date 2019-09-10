@@ -22,12 +22,13 @@
         "postversion": "git push --tags"
     },
     "devDependencies": {
-        "coveralls": "^2.11.12",
-        "jasmine": "^2.4.1",
+        "coveralls": "^3.0.6",
+        "jasmine": "^3.4.0",
         "json-loader": "^0.5.4",
         "nyc": "^14.1.1",
-        "string-replace-loader": "^1.0.3",
-        "webpack": "^1.13.1"
+        "string-replace-loader": "^2.2.0",
+        "webpack": "^4.39.3",
+        "webpack-cli": "^3.3.8"
     },
     "files": [
         "dist",
