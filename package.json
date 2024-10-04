@@ -1,6 +1,6 @@
 {
     "name": "complete-string",
-    "version": "2.2.3",
+    "version": "2.2.4",
     "description": "Complete string by any char. This repo is some kind of polyfill for ES2017 padStart.",
     "license": "MIT",
     "author": {
