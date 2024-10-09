@@ -4,7 +4,7 @@
 [![npm version](https://badge.fury.io/js/complete-string.svg)](https://badge.fury.io/js/complete-string)
 [![downloads count](https://img.shields.io/npm/dt/complete-string.svg)](https://www.npmjs.com/package/complete-string)
 [![license](https://img.shields.io/npm/l/complete-string.svg)](https://www.npmjs.com/package/complete-string)
-[![travis-ci](https://api.travis-ci.com/piecioshka/complete-string.svg?branch=master)](https://app.travis-ci.com/github/piecioshka/complete-string)
+[![github-ci](https://github.com/piecioshka/complete-string/actions/workflows/testing.yml/badge.svg)](https://github.com/piecioshka/complete-string/actions/workflows/testing.yml)
 
 :hammer: Complete string by any char. This repo is some kind of polyfill for ES2017 padStart.
 

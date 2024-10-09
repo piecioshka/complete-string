@@ -17,8 +17,7 @@
         "watch": "webpack -w",
         "test": "jasmine test/specs/**/**.js",
         "coverage": "nyc npm run test && nyc report --reporter=html",
-        "version": "npm run build && git add dist/",
-        "postversion": "git push --tags"
+        "version": "npm run build"
     },
     "devDependencies": {
         "jasmine": "^3.5.0",
