@@ -39,5 +39,6 @@
         "complete",
         "string"
     ],
-    "main": "./dist/complete-string.js"
+    "main": "./dist/complete-string.js",
+    "types": "./index.d.ts"
 }
