@@ -6,7 +6,9 @@
 [![license](https://img.shields.io/npm/l/complete-string.svg)](https://www.npmjs.com/package/complete-string)
 [![github-ci](https://github.com/piecioshka/complete-string/actions/workflows/testing.yml/badge.svg)](https://github.com/piecioshka/complete-string/actions/workflows/testing.yml)
 
-:hammer: Complete string by any char. This repo is some kind of polyfill for ES2017 padStart.
+:hammer: Complete string by any char.
+
+> WARNING: This repo is shim for `String.prototype.padStart` (defined in ES2017 spec).
 
 ## Install
 
@@ -14,21 +16,15 @@
 npm install complete-string
 ```
 
-## API
-
-### `withChar(string: string, length: number, char: string)`
-
-Complete with any char:
+## Usage
 
 ```javascript
+var CompleteString = require('complete-string');
+
+// Complete with any char
 CompleteString.withChar(' batman', 10, 'a') // => 'aaa batman'
-```
 
-### `withZero(string: string, length: number)`
-
-Complete with `0`:
-
-```javascript
+// Complete with `0`:
 var date = new Date();
 CompleteString.withZero(date.getMonth(), 2) // => '05'
 ```
