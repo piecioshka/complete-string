@@ -6,7 +6,7 @@
 [![license](https://img.shields.io/npm/l/complete-string.svg)](https://piecioshka.mit-license.org)
 [![github-ci](https://github.com/piecioshka/complete-string/actions/workflows/testing.yml/badge.svg)](https://github.com/piecioshka/complete-string/actions/workflows/testing.yml)
 
-:hammer: Complete string by any char.
+🔨 Complete string by any char.
 
 > WARNING: This repo is shim for `String.prototype.padStart` (defined in ES2017 spec).
 
