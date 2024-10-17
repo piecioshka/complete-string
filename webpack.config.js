@@ -17,7 +17,8 @@ module.exports = {
         library: 'CompleteString',
         libraryTarget: 'umd',
         filename: '[name].js',
-        path: path.join(__dirname, 'dist')
+        path: path.join(__dirname, 'dist'),
+        clean: true
     },
 
     module: {
@@ -27,7 +28,7 @@ module.exports = {
                 use: [
                     {
                         loader: 'string-replace-loader',
-                        query: {
+                        options: {
                             multiple: [
                                 { search: '$AUTHOR$', replace: author },
                                 { search: '$NAME$', replace: pkg.name },
