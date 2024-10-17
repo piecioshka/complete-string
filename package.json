@@ -13,15 +13,15 @@
         "url": "git+https://github.com/piecioshka/complete-string.git"
     },
     "scripts": {
-        "build": "webpack --profile",
+        "build": "webpack",
+        "build:prod": "webpack --mode=production",
         "watch": "webpack -w",
         "test": "jasmine test/specs/**/**.js",
         "coverage": "nyc npm run test && nyc report --reporter=html",
-        "version": "npm run build"
+        "version": "npm run build:prod"
     },
     "devDependencies": {
         "jasmine": "^3.5.0",
-        "json-loader": "^0.5.4",
         "nyc": "^15.0.0",
         "string-replace-loader": "^2.2.0",
         "webpack": "^4.42.0",
@@ -37,7 +37,9 @@
     ],
     "keywords": [
         "complete",
-        "string"
+        "string",
+        "padStart",
+        "ES2017"
     ],
     "main": "./dist/complete-string.js",
     "types": "./index.d.ts"

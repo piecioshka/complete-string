@@ -5,10 +5,12 @@ var pkg = require('./package.json');
 var author = pkg.author.name + ' <' + pkg.author.email + '> (' + pkg.author.url + ')';
 
 module.exports = {
-    mode: 'production',
+    mode: 'development',
+
+    devtool: 'source-map',
 
     entry: {
-        'complete-string': './index.js',
+        'complete-string': './src/index.js',
     },
 
     output: {
@@ -18,14 +20,8 @@ module.exports = {
         path: path.join(__dirname, 'dist')
     },
 
-    devtool: 'source-map',
-
     module: {
         rules: [
-            {
-                test: /\.json$/,
-                use: 'json-loader'
-            },
             {
                 test: /\.js$/,
                 use: [
