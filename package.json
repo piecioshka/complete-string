@@ -13,12 +13,10 @@
         "url": "git+https://github.com/piecioshka/complete-string.git"
     },
     "scripts": {
-        "build": "webpack",
-        "build:prod": "webpack --mode=production",
+        "build": "webpack --mode=production",
         "watch": "webpack -w",
         "test": "jasmine test/specs/**/**.js",
-        "coverage": "nyc npm run test && nyc report --reporter=html",
-        "version": "npm run build:prod"
+        "coverage": "nyc npm run test && nyc report --reporter=html"
     },
     "devDependencies": {
         "jasmine": "^5.4.0",
