@@ -1,7 +1,7 @@
 {
     "name": "complete-string",
     "description": "🔨 Complete string by any char",
-    "version": "2.2.11",
+    "version": "2.2.12",
     "license": "MIT",
     "author": {
         "name": "Piotr Kowalski",
