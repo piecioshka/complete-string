@@ -1,12 +1,11 @@
 'use strict';
 
-var path = require('path');
-var pkg = require('./package.json');
-var author = pkg.author.name + ' <' + pkg.author.email + '> (' + pkg.author.url + ')';
+const path = require('path');
+const pkg = require('./package.json');
+const author = pkg.author.name + ' <' + pkg.author.email + '> (' + pkg.author.url + ')';
 
 module.exports = {
     mode: 'development',
-
     devtool: 'source-map',
 
     entry: './src/index.ts',
@@ -20,14 +19,18 @@ module.exports = {
         libraryTarget: 'umd',
         filename: '[name].js',
         path: path.join(__dirname, 'dist'),
+        globalObject: 'this',
         clean: true
     },
 
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.ts$/,
                 use: [
+                    {
+                        loader: 'ts-loader',
+                    },
                     {
                         loader: 'string-replace-loader',
                         options: {

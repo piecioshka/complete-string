@@ -7,70 +7,52 @@
  * @example
  * CompleteString.withChar(' batman', 10, 'a') // => 'aaa batman'
  * @example
- * var date = new Date();
+ * const date = new Date();
  * CompleteString.withZero(date.getMonth(), 2) // => '05'
  */
 
-'use strict';
+"use strict";
 
 /**
  * Check truly value. Otherwise throws error.
- *
- * @param {boolean} cond
- * @param {string} message
  */
-function assert(cond, message) {
-    if (!cond) {
+function assert(
+    condition: boolean,
+    message: string | undefined
+): asserts condition {
+    if (!condition) {
         throw new Error(message);
     }
 }
 
 /**
- * Main module.
- *
- * @type {{withChar: Function, withZero: Function}}
+ * Append a char to the left of the string.
  */
-var CompleteString = {
+export const withChar = function (
+    value: string,
+    size: number,
+    item: unknown
+): string {
+    // Cast to strings.
+    const string = String(value);
+    const length = Number(size);
+    const char = String(item);
 
-    /**
-     * Method which add `appender` sign to `chars` that, result length of returns string is length passed by `length`.
-     *
-     * @param {string|number} string
-     * @param {number} length
-     * @param {string|number} char
-     * @returns {string}
-     *
-     * @throw When `appender` is not a single char.
-     */
-    withChar: function (string, length, char) {
-        // Cast to strings.
-        string = String(string);
-        length = Number(length);
-        char = String(char);
-
-        if (string.length > length) {
-            return string;
-        }
-
-        assert(char.length === 1, 'CompleteString: char is not a single char.');
-
-        var diff = (length - string.length);
-        var complement = (new Array(diff + 1)).join(char);
-
-        return complement + string;
-    },
-
-    /**
-     * Append chars passed in first param with `0` char.
-     *
-     * @param {string|number} string
-     * @param {number} length
-     * @returns {string}
-     */
-    withZero: function (string, length) {
-        return this.withChar(string, length, '0');
+    if (string.length > length) {
+        return string;
     }
 
+    assert(char.length === 1, "CompleteString: char is not a single char.");
+
+    const diff = length - string.length;
+    const complement = new Array(diff + 1).join(char);
+
+    return complement + string;
 };
 
-module.exports = CompleteString;
+/**
+ * Append zeros to the left of the string.
+ */
+export const withZero = function (value: string, size: number): string {
+    return withChar(value, size, "0");
+};
