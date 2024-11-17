@@ -8,10 +8,6 @@
         "email": "piecioshka@gmail.com",
         "url": "https://piecioshka.pl"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/piecioshka/complete-string.git"
-    },
     "scripts": {
         "build": "webpack --mode=production",
         "watch": "webpack -w",
@@ -24,6 +20,10 @@
         "string-replace-loader": "^3.1.0",
         "webpack": "^5.95.0",
         "webpack-cli": "^5.1.4"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/piecioshka/complete-string.git"
     },
     "engines": {
         "node": ">=14"
