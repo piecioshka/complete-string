@@ -5,10 +5,9 @@
  * @version $VERSION$
  * @license $LICENSE$
  * @example
- * CompleteString.withChar(' batman', 10, 'a') // => 'aaa batman'
+ * withChar(' batman', 10, 'a') // => 'aaa batman'
  * @example
- * const date = new Date();
- * CompleteString.withZero(date.getMonth(), 2) // => '05'
+ * withZero(new Date().getMonth(), 2) // => '05'
  */
 
 "use strict";
