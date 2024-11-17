@@ -1,6 +1,6 @@
 'use strict';
 
-var CompleteString = require('../../src/index');
+var CompleteString = require('./index');
 
 describe('CompleteString', function () {
     it('is ready', function () {

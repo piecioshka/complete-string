@@ -9,8 +9,10 @@ module.exports = {
 
     devtool: 'source-map',
 
-    entry: {
-        'complete-string': './src/index.js',
+    entry: './src/index.ts',
+
+    resolve: {
+        extensions: ['.ts', '.js']
     },
 
     output: {
