@@ -20,26 +20,20 @@ npm install complete-string
 ## Usage
 
 ```javascript
-var CompleteString = require('complete-string');
+// CommonJS
+const CompleteString = require('complete-string');
 
-// Complete with any char
+// or ES Modules
+import * as CompleteString from 'complete-string';
+
 CompleteString.withChar(' batman', 10, 'a') // => 'aaa batman'
+CompleteString.withZero('5', 2) // => '05'
 
-// Complete with `0`:
-var date = new Date();
-CompleteString.withZero(date.getMonth(), 2) // => '05'
-```
+// or import particular functions
+import { withChar, withZero } from "complete-string";
 
-## Unit tests
-
-```bash
-npm test
-```
-
-## Code coverage
-
-```bash
-npm run coverage
+withChar(' zorro', 10, 'z') // => 'zzzz zorro'
+withZero('6', 2) // => '06'
 ```
 
 ## License
