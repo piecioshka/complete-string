@@ -11,12 +11,10 @@
     "scripts": {
         "build": "webpack --mode=production",
         "watch": "webpack -w",
-        "test": "jasmine test/specs/**/**.js",
-        "coverage": "nyc npm run test && nyc report --reporter=html"
+        "test": "vitest run",
+        "coverage": "vitest run --coverage"
     },
     "devDependencies": {
-        "jasmine": "^5.4.0",
-        "nyc": "^17.1.0",
         "string-replace-loader": "^3.1.0",
         "webpack": "^5.95.0",
         "webpack-cli": "^5.1.4"
@@ -43,5 +41,8 @@
         "ES2017"
     ],
     "main": "./dist/complete-string.js",
-    "types": "./index.d.ts"
+    "types": "./index.d.ts",
+    "dependencies": {
+        "vitest": "^2.1.5"
+    }
 }
