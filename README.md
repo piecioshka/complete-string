@@ -28,7 +28,9 @@ import * as CompleteString from 'complete-string';
 
 CompleteString.withChar(' batman', 10, 'a') // => 'aaa batman'
 CompleteString.withZero('5', 2) // => '05'
+```
 
+```javascript
 // or import particular functions
 import { withChar, withZero } from "complete-string";
 
