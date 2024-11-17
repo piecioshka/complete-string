@@ -38,4 +38,4 @@ withZero('6', 2) // => '06'
 
 ## License
 
-[The MIT License](https://piecioshka.mit-license.org) @ 2014
+[The MIT License](https://piecioshka.mit-license.org) @ 2014-2024
