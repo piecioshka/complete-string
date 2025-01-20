@@ -28,7 +28,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/piecioshka/complete-string.git"
+        "url": "git+ssh://git@github.com/piecioshka/complete-string.git"
     },
     "engines": {
         "node": ">=14"
