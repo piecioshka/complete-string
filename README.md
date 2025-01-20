@@ -11,13 +11,13 @@
 
 > WARNING: This repo is shim for `String.prototype.padStart` (defined in ES2017 spec).
 
-## Install
+## Usage
+
+Installation:
 
 ```bash
 npm install complete-string
 ```
-
-## Usage
 
 ```javascript
 // CommonJS
