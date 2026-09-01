@@ -5,7 +5,7 @@
 [![downloads count](https://img.shields.io/npm/dt/complete-string.svg)](https://www.npmjs.com/package/complete-string)
 [![size](https://packagephobia.com/badge?p=complete-string)](https://packagephobia.com/result?p=complete-string)
 [![license](https://img.shields.io/npm/l/complete-string.svg)](https://piecioshka.mit-license.org)
-[![github-ci](https://github.com/piecioshka/complete-string/actions/workflows/testing.yml/badge.svg)](https://github.com/piecioshka/complete-string/actions/workflows/testing.yml)
+[![github-ci](https://github.com/piecioshka/complete-string/actions/workflows/ci.yml/badge.svg)](https://github.com/piecioshka/complete-string/actions/workflows/ci.yml)
 
 🔨 Complete string by any char.
 
